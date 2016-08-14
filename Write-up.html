@@ -211,37 +211,37 @@ confusionMatrix(pred2, validation$classe)</code></pre>
 ## 
 ##           Reference
 ## Prediction    A    B    C    D    E
-##          A 1168  131   77   38   29
-##          B   37  621   85   37  134
-##          C   77  120  554  109   77
-##          D  108   35  117  591   82
-##          E    5   42   22   29  579
+##          A 1137  140   96   48   36
+##          B   45  613   75   36  137
+##          C   85  121  545  103   80
+##          D  123   29  121  586   92
+##          E    5   46   18   31  556
 ## 
 ## Overall Statistics
 ##                                           
-##                Accuracy : 0.7164          
-##                  95% CI : (0.7035, 0.7289)
+##                Accuracy : 0.7009          
+##                  95% CI : (0.6878, 0.7137)
 ##     No Information Rate : 0.2845          
 ##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
 ##                                           
-##                   Kappa : 0.6411          
+##                   Kappa : 0.6214          
 ##  Mcnemar's Test P-Value : &lt; 2.2e-16       
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            0.8373   0.6544   0.6480   0.7351   0.6426
-## Specificity            0.9216   0.9259   0.9054   0.9166   0.9755
-## Pos Pred Value         0.8094   0.6794   0.5912   0.6334   0.8552
-## Neg Pred Value         0.9344   0.9178   0.9241   0.9464   0.9238
+## Sensitivity            0.8151   0.6459   0.6374   0.7289   0.6171
+## Specificity            0.9088   0.9259   0.9039   0.9110   0.9750
+## Pos Pred Value         0.7804   0.6766   0.5835   0.6162   0.8476
+## Neg Pred Value         0.9252   0.9160   0.9219   0.9449   0.9188
 ## Prevalence             0.2845   0.1935   0.1743   0.1639   0.1837
-## Detection Rate         0.2382   0.1266   0.1130   0.1205   0.1181
-## Detection Prevalence   0.2942   0.1864   0.1911   0.1903   0.1381
-## Balanced Accuracy      0.8795   0.7901   0.7767   0.8258   0.8091</code></pre>
+## Detection Rate         0.2319   0.1250   0.1111   0.1195   0.1134
+## Detection Prevalence   0.2971   0.1847   0.1905   0.1939   0.1338
+## Balanced Accuracy      0.8619   0.7859   0.7707   0.8199   0.7961</code></pre>
 <pre class="r"><code>head(pred2,100)</code></pre>
 <pre><code>##   [1] A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A
-##  [36] A A A A A A A A A A A A C C C C A A A A C A A A A A A A A C C A A A A
-##  [71] C E A A D A A A A A A A A A A C C A C D D C A D D D D D D D
+##  [36] A A A A A A A A A A A A A A C C C C C C C C C C C A A A A A A A A A A
+##  [71] A A A C A A A A A A C C C C E D E D A A A A A A A A A A A A
 ## Levels: A B C D E</code></pre>
 <p>The accuracy in the test validation provides an accuracy of 0.7351, which appears quite OK.</p>
 </div>
@@ -251,7 +251,7 @@ confusionMatrix(pred2, validation$classe)</code></pre>
 <p>The prediction of the model on the data without “classe”value is as follows:</p>
 <pre class="r"><code>pred3 &lt;- predict(fit2, testing)
 pred3</code></pre>
-<pre><code>##  [1] B A B A A E D D A A D A B A B A A B B B
+<pre><code>##  [1] B A B A C E D D A A D A B A E A A B B B
 ## Levels: A B C D E</code></pre>
 </div>
 <div id="course-project-prediction-quiz-portion" class="section level1">
