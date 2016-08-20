@@ -218,10 +218,10 @@ fit1 &lt;- train(classe ~ ., data=subtraining, method=&quot;lda&quot;)</code></p
 ## Resampling results:
 ## 
 ##   Accuracy   Kappa    
-##   0.7105268  0.6338569
+##   0.7078301  0.6303099
 ## 
 ## </code></pre>
-<p>The expected accuracy of the model is reported as 70.9%, which appears kind of weak.</p>
+<p>The expected accuracy of the model is reported as 71%, which appears kind of weak.</p>
 <pre class="r"><code>pred1 &lt;- predict(fit1, validation)
 confusionMatrix(pred1, validation$classe)</code></pre>
 <pre><code>## Confusion Matrix and Statistics
